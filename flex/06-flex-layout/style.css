@@ -5,10 +5,35 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.left-links {
+  display: flex;
+}
+
+.right-links {
+  display: flex;
 }
 
 img {
   width: 600px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 button {
@@ -16,6 +41,11 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
+  /* padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px; */
 }
 
 input {
@@ -24,4 +54,31 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  gap: 16px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: #666;
+}
+a:active {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:visited {text-decoration: none;}
+
+.footer {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
 }
